@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retrieval-eval"
+version = "0.1.0"
+description = "Industry-grade RAG retrieval quality evaluation and regression testing"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [{ name = "Yin Li", email = "kevinli.ai.work@gmail.com" }]
+keywords = ["rag", "retrieval", "evaluation", "recall", "mrr", "regression-testing", "embeddings"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy>=1.24.0",
+    "pyyaml>=6.0",
+    "click>=8.0",
+    "tqdm>=4.65.0",
+    "openai>=1.0.0",
+    "qdrant-client>=1.7.0",
+    "httpx>=0.25.0",
+]
+
+[project.optional-dependencies]
+local = [
+    "sentence-transformers>=2.2.0",
+    "torch>=2.0.0",
+]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+]
+
+[project.scripts]
+retrieval-eval = "retrieval_eval.cli:main"
+
+[project.urls]
+Repository = "https://github.com/Kevin-Li-2025/retrieval-eval"
+Documentation = "https://github.com/Kevin-Li-2025/retrieval-eval#readme"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["retrieval_eval*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-v --tb=short"

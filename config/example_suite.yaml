@@ -1,0 +1,12 @@
+# Example eval suite: golden set + metrics
+name: example-rag-eval
+
+corpus:
+  path: ../data/corpus.jsonl
+
+queries:
+  path: ../data/queries.jsonl
+
+metrics:
+  k: [1, 5, 10]
+  mrr: true

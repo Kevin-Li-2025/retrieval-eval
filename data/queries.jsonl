@@ -1,0 +1,6 @@
+{"query_id": "q1", "query": "What is RAG and how does it work?", "expected_ids": ["doc3"]}
+{"query_id": "q2", "query": "How do we measure retrieval quality?", "expected_ids": ["doc5", "doc7"]}
+{"query_id": "q3", "query": "Vector database for similarity search", "expected_ids": ["doc6"]}
+{"query_id": "q4", "query": "Text embeddings for semantic search", "expected_ids": ["doc4"]}
+{"query_id": "q5", "query": "Prevent overfitting in ML", "expected_ids": ["doc2"]}
+{"query_id": "q6", "query": "Regression testing for search", "expected_ids": ["doc7", "doc8"]}

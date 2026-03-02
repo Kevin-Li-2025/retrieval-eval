@@ -1,0 +1,8 @@
+{"id": "doc1", "text": "Python is a programming language used for web development, data science, and automation."}
+{"id": "doc2", "text": "Machine learning models require training data and validation sets to avoid overfitting."}
+{"id": "doc3", "text": "RAG stands for Retrieval-Augmented Generation; it combines search with large language models."}
+{"id": "doc4", "text": "Embeddings are vector representations of text used for semantic search and similarity."}
+{"id": "doc5", "text": "Recall at K measures whether relevant documents appear in the top K results."}
+{"id": "doc6", "text": "Qdrant is a vector database optimized for similarity search and filtering."}
+{"id": "doc7", "text": "Evaluation of retrieval systems often uses golden sets of queries and expected documents."}
+{"id": "doc8", "text": "Regression testing ensures that changes do not degrade existing performance metrics."}
